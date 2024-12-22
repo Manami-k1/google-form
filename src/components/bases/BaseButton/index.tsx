@@ -13,6 +13,11 @@ const StyledButton = styled.button`
   font-size: ${({ theme }) => theme.fontSize.md};
   padding: ${({ theme }) => theme.spacing.sm} ${({ theme }) => theme.spacing.lg};
   border-radius: ${({ theme }) => theme.spacing.xs};
+  &:hover {
+    background: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.accent};
+    cursor: pointer;
+  }
 `;
 
 const BaseButton: FC<ButtonProps> = ({ children, type }) => {

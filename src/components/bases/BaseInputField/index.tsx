@@ -9,6 +9,7 @@ interface InputFieldProps extends ComponentPropsWithRef<"div"> {
   label?: string;
   id: string;
   required?: boolean;
+  flex?: boolean;
 }
 
 const StyledInputField = styled.div``;
@@ -17,14 +18,15 @@ const BaseInputField: FC<InputFieldProps> = ({
   children,
   label,
   id,
+  flex,
   required,
   ...prop
 }) => {
   return (
     <StyledInputField {...prop}>
       <BaseCard>
-        <BaseCardBody>
-          <BaseInputName>
+        <BaseCardBody flex={flex}>
+          <BaseInputName flex={flex}>
             {label}
             {required && (
               <BaseTypography as="span" color="red" label={label}>

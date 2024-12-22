@@ -10,6 +10,7 @@ const StyledBaseHeading = styled.div`
   font-size: 28px;
   font-weight: bold;
   padding-bottom: 8px;
+  padding: 0;
 `;
 
 const BaseHeading: FC<BaseHeadingProps> = ({ children, as }) => {

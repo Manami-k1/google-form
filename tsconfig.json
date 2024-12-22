@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node"],
+
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,7 +17,8 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
