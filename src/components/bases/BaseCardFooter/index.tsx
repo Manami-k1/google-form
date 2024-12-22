@@ -28,11 +28,11 @@ interface BaseCardFooterProps extends ComponentPropsWithRef<"div"> {
 }
 
 // StyledBaseCardFooter用のProps
-interface StyledBaseCardFooterProps {
-  px?: keyof ThemeSpacing;
-}
+// interface StyledBaseCardFooterProps {
+//   px?: keyof ThemeSpacing;
+// }
 
-const StyledBaseCardFooter = styled.div<StyledBaseCardFooterProps>`
+const StyledBaseCardFooter = styled.div<BaseCardFooterProps>`
   padding: ${({ px, theme }) => px && theme.spacing["lg"]};
   padding-top: ${({ px, theme }) => px && theme.spacing[px]};
   padding-bottom: ${({ px, theme }) => px && theme.spacing[px]};
