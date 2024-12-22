@@ -20,7 +20,7 @@ import {
 } from "@/components/bases"; // コンポーネントライブラリのインポート
 import { useRouter } from "next/router";
 
-const IndexPage = () => {
+const Home = () => {
   const router = useRouter();
   const {
     register,
@@ -214,4 +214,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default Home;
