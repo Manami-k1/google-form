@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 15px; 
     line-height: 1.5;
     background: ${({ theme }) => theme.color.main};
-    font-family: serif;
+    font-family: sans-serif;
   }
   label {
     font-size: ${({ theme }) => theme.fontSize.sm};
